@@ -52,11 +52,10 @@ ul {
 }
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
-  body{
 
-  }
   .box {
     width:225px;
+    margin-top: 20%;
   }
 
   .box-img{
