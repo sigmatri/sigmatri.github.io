@@ -1,0 +1,33 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: url(bg.gif) no-repeat;
+  background-size: 100%;
+
+  /* background-color: black; */
+}
+.box{
+  width: 450px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  color: white;
+  font-family: 'Pres Start 2P', courier, sans-serif;
+}
+
+.box-img{
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+ .box h1{
+   font-size: 30px;
+   letter-spacing: 2px;
+   font-weight: 100;
+ }
+
+.box p{
+  text-align: justify;
+}
