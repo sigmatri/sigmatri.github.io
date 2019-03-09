@@ -31,3 +31,16 @@ body{
 .box p{
   text-align: justify;
 }
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .box {
+    width:225px;
+  }
+
+  .box-img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+  }
+}
