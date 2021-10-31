@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body {
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(245, 245, 245);
+}
+
+h1 {
+    margin: 0 150px 0 150px;  
+    font-size: 100px;
+    font-weight: 100;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    text-align: center;
+    color: rgba(175, 47, 47, 0.15);
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input .form-control{
+    background:  white;
+    border: none;
+    height: 50px;
+    width: 100%;
+    padding: 0px 20px;
+    font-size: 16px;
+    
+}
+.all .material-icons{
+    width:50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 30px;
+    color: rgba(175, 47, 47, 0.15);
+}
+
+.all.active .material-icons{
+    color: black !important;
+}
+
+.input .form-control:focus {
+    outline: none;
+}
+
+.todo-list li {
+    display: flex;
+    align-items: center;
+    margin: 0 -0.5px 0 -0.5px;
+    justify-content: space-between;
+    padding: 15px;
+    color: rgba(175, 47, 47, 0.15);
+    border: 1px solid rgba(175, 47, 47, 0.15);
+    background: white;
+    /* border-radius: 5px; */
+    overflow: hidden;
+    /* box-shadow: 0px 5px 10px rgba(0, 0, 0,0.55); */
+}
+.left-cont input{
+    display: none;
+    cursor: pointer;
+}
+.left-cont label{
+    position: relative;
+    cursor: pointer;
+}
+
+.left-cont label:before{
+    content: '';
+    padding: 11px;
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid rgba(175, 47, 47, 0.15);
+}
+
+.left-cont input:checked + label:before{
+    background: white;
+}
+
+.left-cont input:checked + label:after{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 4px;
+    left: 8px;
+    width: 5px;
+    height: 12px;
+    border: solid #221525;
+    border-width: 0px 2px 2px 0px;
+    transform: rotate(45deg);
+}
+
+.done{
+    text-decoration: line-through;
+}
+
+
+.remove {
+    cursor:  pointer;
+    line-height:  1;
+    transform:  translateY(48px);
+    transition: .5s;
+}
+
+.remove.active {
+    transform: translateY(0px);
+    transition: .5s;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-style: italic;
+    color: rgb(234, 231, 230);
+    font-size: 24px;
+    font-weight: 100;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.container {
+    width: 100%;
+    background: white;
+    box-shadow: 0px 0px 18px -19px rgba(0, 0, 0, 0.38),
+                0px 0px 32.7px -19px rgba(0, 0, 0, 0.273),
+                0px 0px 44.5px -19px rgba(0, 0, 0, 0.227),
+                0px 0px 54.9px -19px rgba(0, 0, 0, 0.19),
+                0px 0px 69.4px -19px rgba(0, 0, 0, 0.153),
+                0px 0px 124px -19px rgba(0, 0, 0, 0.107);
+}
+.status {
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(47, 47, 47, 0.15);
+}
+
+.btn{
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: white;
+    margin: 0 15px 0 15px;
+    color: rgba(47, 47, 47, 0.15);
+    padding: 5px;
+}
+
+.btn:hover{
+    color: black;
+    padding: -1px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.btn.active{
+    color: black;
+    padding: -1px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+
+.item-status{
+    margin: 15px;
+}
+li.gone{
+    display: none;
+}
